@@ -1,0 +1,31 @@
+header {
+    background: #666;
+    nav {
+        max-width: $max-width;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        .logo {
+            flex: 1;
+            img {
+                display: block;
+            }
+        }
+        ul {
+            flex: 3;
+            text-align: right;
+            li {
+                display: inline;
+                a {
+                    font-size: 1.6rem;
+                    padding: 0rem 1rem;
+                    color: #eee;
+                    transition: all 0.25s ease-in-out;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
