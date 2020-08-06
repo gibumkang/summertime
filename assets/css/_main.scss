@@ -1,0 +1,26 @@
+.full-width {
+    width: 100%;
+}
+
+.main-wrapper {
+    max-width: $max-width;
+}
+
+.audio-controller {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 0.5rem 0.75rem;
+    @include letterspacing(1.25rem);
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        color: $warning;
+        border: 3px solid $warning;
+        transform: scale(1.1);
+    }
+}

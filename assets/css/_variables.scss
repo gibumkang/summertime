@@ -1,5 +1,6 @@
-$primary-font: "Rubik", sans-serif;
-$secondary-font: "Prata", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;600&family=Viga&display=swap");
+$primary-font: "Epilogue", sans-serif;
+$header-font: "Viga", sans-serif;
 
 $primary-color: #ac824a;
 $secondary-color: #f0d341;
@@ -14,23 +15,8 @@ $padding: 1.5rem;
 $max-width: 120rem;
 $inner-width: 65rem;
 
-@mixin letterspacing {
-    font-size: 0.8rem;
+@mixin letterspacing($font-size: 0.8rem) {
+    font-size: $font-size;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-}
-
-@mixin flex($divpadding, $divmargin) {
-    display: flex;
-    margin: 0 auto;
-    max-width: $inner-width;
-    padding: 1rem 0rem;
-    @media screen and (max-width: 40rem) {
-        display: block;
-    }
-    div {
-        flex: 1;
-        padding: $divpadding;
-        margin: $divmargin;
-    }
 }
