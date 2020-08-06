@@ -1,0 +1,37 @@
+$primary-font: "Rubik", sans-serif;
+$secondary-font: "Prata", sans-serif;
+
+$primary-color: #ac824a;
+$secondary-color: #f0d341;
+$tertiary-color: #a4efa4;
+$danger: #b03033;
+$warning: #fff600;
+$success: #73ba73;
+
+$grey: #666;
+
+$padding: 1.5rem;
+$max-width: 70rem;
+$inner-width: 65rem;
+$mobilebreakpoint: 1140px;
+
+@mixin letterspacing {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+@mixin flex($divpadding, $divmargin) {
+    display: flex;
+    margin: 0 auto;
+    max-width: $inner-width;
+    padding: 1rem 0rem;
+    @media screen and (max-width: 40rem) {
+        display: block;
+    }
+    div {
+        flex: 1;
+        padding: $divpadding;
+        margin: $divmargin;
+    }
+}

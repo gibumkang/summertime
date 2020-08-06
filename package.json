@@ -1,0 +1,14 @@
+{
+  "name": "summertime",
+  "version": "1.0.0",
+  "description": "Custom Ghost template built on Bulma.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.0"
+  }
+}
