@@ -4,8 +4,49 @@
 @import "./header";
 @import "./main";
 @import "./intro";
+@import "./about";
+@import "./gallery";
 @import "./footer";
 
 html {
     font-size: 62.5%;
+}
+
+p {
+    padding: $padding 0rem;
+    font-family: $primary-font;
+}
+
+//helper + utility classes
+
+.full-width {
+    width: 100%;
+}
+
+.main-wrapper {
+    max-width: $max-width;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.y-padding {
+    padding: $padding 0rem;
+}
+
+.x-padding {
+    padding: 0rem $padding;
+}
+
+.xy-padding {
+    padding: $padding;
+}
+
+.spacer {
+    padding: 3rem 0rem;
 }
