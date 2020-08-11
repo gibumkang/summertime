@@ -1,0 +1,30 @@
+#blog {
+    max-width: $inner-width;
+    padding: $padding;
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        & > section {
+            border: 0.1rem solid #ccc;
+            img {
+                transition: all 0.25s ease-in-out;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            article {
+                padding: $padding;
+                box-shadow: 0.5rem 0.5rem 0rem#ccc;
+                h3 {
+                    font-size: 2rem;
+                }
+                .info {
+                    @include letterspacing(1rem);
+                    padding-top: 0.25rem;
+                }
+            }
+        }
+    }
+}

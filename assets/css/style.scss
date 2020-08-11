@@ -6,15 +6,33 @@
 @import "./intro";
 @import "./about";
 @import "./gallery";
+@import "discography";
+@import "./blog";
+@import "./contact";
 @import "./footer";
 
 html {
     font-size: 62.5%;
+    font-family: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $header-font;
+}
+
+p,
+article,
+section,
+a {
+    font-family: $primary-font;
 }
 
 p {
     padding: $padding 0rem;
-    font-family: $primary-font;
 }
 
 //helper + utility classes
@@ -39,8 +57,16 @@ p {
     padding: $padding 0rem;
 }
 
+.y2-padding {
+    padding: $padding * 2 0rem;
+}
+
 .x-padding {
     padding: 0rem $padding;
+}
+
+.x2-padding {
+    padding: 0rem $padding * 2;
 }
 
 .xy-padding {

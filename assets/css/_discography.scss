@@ -1,0 +1,47 @@
+#discography {
+    .discography-container {
+        max-width: $inner-width;
+        margin: 0 auto;
+        padding: 0rem $padding;
+        .album-container {
+            position: relative;
+            .album-cover {
+                width: 50rem;
+                height: 45rem;
+                background: red;
+                border-radius: 0.3rem;
+                margin: 0 auto;
+            }
+            .album-record {
+                width: 43rem;
+                height: 43rem;
+                background: blue;
+                border-radius: 50%;
+                margin: 0 auto;
+                position: absolute;
+                bottom: 0.9rem;
+                z-index: -1;
+                left: 45%;
+            }
+        }
+        .table {
+            width: 100%;
+            font-size: 1.6rem;
+            font-family: $primary-font;
+            margin: $padding * 3 auto;
+            a.listen {
+                @include letterspacing;
+                padding: 0.5rem $padding/2;
+                border: 0.1rem solid #ccc;
+                border-radius: 1.5rem;
+                vertical-align: middle;
+                white-space: nowrap;
+                i {
+                    font-size: 1.25rem;
+                    position: relative;
+                    top: 0.15rem;
+                }
+            }
+        }
+    }
+}
